@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import chrome from 'chrome-aws-lambda';
+//import chrome from 'chrome-aws-lambda';
 import puppeteer from 'puppeteer-core';
 
 export default async function screenshot(url: string) {
   const options = process.env.AWS_REGION
     ? {
-        args: chrome.args,
-        executablePath: await chrome.executablePath,
-        headless: chrome.headless
+        //args: chrome.args,
+        //executablePath: await chrome.executablePath,
+        //headless: chrome.headless
       }
     : {
         args: [],
